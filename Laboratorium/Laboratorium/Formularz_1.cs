@@ -35,6 +35,7 @@ namespace Laboratorium
         {
             Formularz2 form2 = new Formularz2(tb_tekst.Text);
             form2.Show();
+            Baza_szwalniaEntities1 db = new Baza_szwalniaEntities1();
         }
     }
 }

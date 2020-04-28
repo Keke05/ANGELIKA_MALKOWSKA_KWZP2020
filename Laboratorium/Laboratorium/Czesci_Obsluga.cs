@@ -19,6 +19,5 @@ namespace Laboratorium
         public int Ilosc { get; set; }
     
         public virtual Elementy Elementy { get; set; }
-        public virtual Obsluga_Techniczna Obsluga_Techniczna { get; set; }
     }
 }

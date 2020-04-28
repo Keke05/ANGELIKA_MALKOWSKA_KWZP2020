@@ -12,9 +12,13 @@ namespace Laboratorium
     using System;
     using System.Collections.Generic;
     
-    public partial class Produkty
+    public partial class Urlop
     {
-        public int ID_Produkty { get; set; }
-        public string Nazwa { get; set; }
+        public int ID_Urlop { get; set; }
+        public Nullable<int> ID_Pracownika { get; set; }
+        public System.DateTime Data_rozpoczęcia { get; set; }
+        public System.DateTime Data_zakonczenia { get; set; }
+    
+        public virtual Pracownicy Pracownicy { get; set; }
     }
 }

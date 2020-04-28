@@ -12,10 +12,13 @@ namespace Laboratorium
 {
     public partial class Formularz_1 : Form
     {
+        private SzwalniaEntities1 db;
+
         public Formularz_1()
         {
             InitializeComponent();
-            btn_przycisk.Enabled = false;            
+            btn_przycisk.Enabled = false;
+            db = new SzwalniaEntities1();
         }
 
         private void chb_przycisk_CheckedChanged(object sender, EventArgs e)
@@ -25,17 +28,18 @@ namespace Laboratorium
 
         private void tb_tekst_TextChanged(object sender, EventArgs e)
         {
-            if (tb_tekst.TextLength > 0)
-            {
-                btn_przycisk.Text = tb_tekst.Text;
-            }
+          
+            //if (tb_tekst.TextLength > 0)
+            //{
+            //    btn_przycisk.Text = tb_tekst.Text;
+            //}
+           
         }
 
         private void btn_przycisk_Click(object sender, EventArgs e)
         {
-            Formularz2 form2 = new Formularz2(tb_tekst.Text);
+            Formularz2 form2 = new Formularz2(db, tb_tekst.Text);
             form2.Show();
-            Baza_szwalniaEntities1 db = new Baza_szwalniaEntities1();
         }
     }
 }

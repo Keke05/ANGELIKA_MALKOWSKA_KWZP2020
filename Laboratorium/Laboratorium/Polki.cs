@@ -20,7 +20,7 @@ namespace Laboratorium
             this.Zawartosc = new HashSet<Zawartosc>();
         }
     
-        public string ID_Polka { get; set; }
+        public int ID_Polka { get; set; }
         public Nullable<int> ID_Rozmiar_Polki { get; set; }
     
         public virtual Polki_Rozmiary Polki_Rozmiary { get; set; }

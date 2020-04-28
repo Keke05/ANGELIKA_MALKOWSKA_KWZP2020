@@ -196,7 +196,7 @@
     <Compile Include="Proces_Zamowienie.cs">
       <DependentUpon>Szwalnia.tt</DependentUpon>
     </Compile>
-    <Compile Include="Produkty.cs">
+    <Compile Include="Produkt.cs">
       <DependentUpon>Szwalnia.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -241,6 +241,9 @@
       <DependentUpon>Szwalnia.edmx</DependentUpon>
     </Compile>
     <Compile Include="Umowy_Kurierzy.cs">
+      <DependentUpon>Szwalnia.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Urlop.cs">
       <DependentUpon>Szwalnia.tt</DependentUpon>
     </Compile>
     <Compile Include="Zamowienia.cs">

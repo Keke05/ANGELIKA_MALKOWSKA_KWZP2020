@@ -12,21 +12,18 @@ namespace Laboratorium
     using System;
     using System.Collections.Generic;
     
-    public partial class Dostawcy_Zaopatrzenie
+    public partial class Produkt
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Dostawcy_Zaopatrzenie()
+        public Produkt()
         {
-            this.Oferta = new HashSet<Oferta>();
+            this.Zamowienie_Produkt = new HashSet<Zamowienie_Produkt>();
         }
     
-        public int ID_Dostawcy { get; set; }
+        public int ID_Produkt { get; set; }
         public string Nazwa { get; set; }
-        public Nullable<int> Telefon_1 { get; set; }
-        public Nullable<int> Telefon_2 { get; set; }
-        public string Email { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Oferta> Oferta { get; set; }
+        public virtual ICollection<Zamowienie_Produkt> Zamowienie_Produkt { get; set; }
     }
 }
